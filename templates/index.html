@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>静物识别数据集收集</title>
+	<link rel="shortcut icon" href="../static/favicon.ico" type="image/x-icon" />
+	<style>
+	input{
+		outline-style: none ;
+		border: 1px solid #ccc; 
+		border-radius: 3px;
+		padding: 13px 14px;
+		width: 300px;
+		font-size: 14px;
+		font-weight: 700;
+		font-family: "Microsoft soft";
+		}
+	.title {
+		color: #333;
+		letter-spacing: -10px;
+		margin-left: -40px;
+		font-weight: 200;
+		color: transparent;
+		font-size: 80px;
+		background: url("https://images.blogthings.com/thecolorfulpatterntest/pattern-2.png") repeat;
+		background-position: 10% 30%;
+		-webkit-background-clip: text;
+		position: relative;
+		text-align: center;
+		line-height: 150px;
+		width: 360px;
+	}
+	body:before{
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: .3;
+		z-index: -1;
+		content: "";
+		position: fixed;
+		background: url(https://z3.ax1x.com/2021/06/04/2JGXQO.png) center/cover;
+	}
+	/*https://api.ixiaowai.cn/mcapi/mcapi.php*/
+	</style>
+</head>
+    <body>
+        <div align="center">
+            <form method="post" action="http://data.sqdxwz.com/index" enctype="multipart/form-data">
+			<h1 class="title">数据上传</h1>
+			<p><strong>注意</strong>：支持上传的文件格式为：png、jpg和zip。单张图片可以采用png或者jpg上传。多张图片可以打包成zip上传。</p>
+            <input type="file" size="30" name="photo"/>
+			</br>
+			<h1 class="title">对应标签</h1>
+			<p><strong>注意</strong>：每次上传必须带有数据的标签。未建立的标签文件输入后后台自动整理。</p>
+            <input type="text" class="txt_input" name="name" style="margin-top:15px;"/>
+            <input type="submit" value="提交" class="button-new" style="margin-top:15px;"/>
+            </form>
+        </div>
+    </body>
+</html>
